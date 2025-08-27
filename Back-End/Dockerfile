@@ -31,20 +31,14 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy composer files first for better layer caching
-COPY composer.json composer.lock ./
-
-# Copy artisan file to avoid post-autoload-dump script error
-COPY artisan ./
+# Copy all application files
+COPY . .
 
 # Install Laravel dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Copy application code
-COPY . .
-
-# Copy existing application directory permissions
-COPY --chown=www-data:www-data . /var/www/html
+# Set proper ownership
+RUN chown -R www-data:www-data /var/www/html
 
 # Set proper permissions
 RUN chown -R www-data:www-data /var/www/html \
