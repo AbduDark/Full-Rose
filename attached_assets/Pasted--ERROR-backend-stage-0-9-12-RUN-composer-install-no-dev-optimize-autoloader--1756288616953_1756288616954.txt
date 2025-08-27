@@ -1,0 +1,83 @@
+ => ERROR [backend stage-0  9/12] RUN composer install --no-dev --optimize-autoloader                                                 3.9s
+------
+ > [backend stage-0  9/12] RUN composer install --no-dev --optimize-autoloader:
+0.673 Installing dependencies from lock file
+0.677 Verifying lock file contents can be installed on current platform.
+0.729 Package operations: 0 installs, 0 updates, 49 removals
+0.732   - Removing theseer/tokenizer (1.2.3)
+0.735   - Removing ta-tikoma/phpunit-architecture-test (0.8.5)
+0.738   - Removing symfony/yaml (v7.3.1)
+0.741   - Removing staabm/side-effects-detector (1.0.5)
+0.753   - Removing sebastian/version (5.0.2)
+0.757   - Removing sebastian/type (5.1.2)
+0.760   - Removing sebastian/recursion-context (6.0.2)
+0.763   - Removing sebastian/object-reflector (4.0.1)
+0.766   - Removing sebastian/object-enumerator (6.0.1)
+0.770   - Removing sebastian/lines-of-code (3.0.1)
+0.774   - Removing sebastian/global-state (7.0.2)
+0.774   - Removing sebastian/exporter (6.3.0)
+0.775   - Removing sebastian/environment (7.2.1)
+0.775   - Removing sebastian/diff (6.0.2)
+0.775   - Removing sebastian/complexity (4.0.1)
+0.775   - Removing sebastian/comparator (6.3.1)
+0.776   - Removing sebastian/code-unit-reverse-lookup (4.0.1)
+0.776   - Removing sebastian/code-unit (3.0.3)
+0.776   - Removing sebastian/cli-parser (3.0.2)
+0.776   - Removing phpunit/phpunit (11.5.15)
+0.776   - Removing phpunit/php-timer (7.0.1)
+0.777   - Removing phpunit/php-text-template (4.0.1)
+0.777   - Removing phpunit/php-invoker (5.0.1)
+0.777   - Removing phpunit/php-file-iterator (5.1.0)
+0.778   - Removing phpunit/php-code-coverage (11.0.10)
+0.778   - Removing phpstan/phpdoc-parser (2.2.0)
+0.778   - Removing phpdocumentor/type-resolver (1.10.0)
+0.778   - Removing phpdocumentor/reflection-docblock (5.6.2)
+0.779   - Removing phpdocumentor/reflection-common (2.2.0)
+0.779   - Removing phar-io/version (3.2.1)
+0.779   - Removing phar-io/manifest (2.0.4)
+0.780   - Removing pestphp/pest-plugin-mutate (v3.0.5)
+0.780   - Removing pestphp/pest-plugin-laravel (v3.2.0)
+0.780   - Removing pestphp/pest-plugin-arch (v3.1.1)
+0.781   - Removing pestphp/pest-plugin (v3.0.0)
+0.781   - Removing pestphp/pest (v3.8.2)
+0.782   - Removing nunomaduro/collision (v8.8.2)
+0.782   - Removing myclabs/deep-copy (1.13.3)
+0.782   - Removing mockery/mockery (1.6.12)
+0.783   - Removing laravel/sail (v1.44.0)
+0.783   - Removing laravel/pint (v1.24.0)
+0.783   - Removing laravel/pail (v1.2.3)
+0.784   - Removing jean85/pretty-package-versions (2.1.1)
+0.784   - Removing hamcrest/hamcrest-php (v2.1.1)
+0.784   - Removing filp/whoops (2.18.3)
+0.784   - Removing fidry/cpu-core-counter (1.2.0)
+0.784   - Removing fakerphp/faker (v1.24.1)
+0.784   - Removing doctrine/deprecations (1.1.5)
+0.785   - Removing brianium/paratest (v7.8.3)
+0.937   0/39 [>---------------------------]   0%
+1.069  10/39 [=======>--------------------]  25%
+1.252  20/39 [==============>-------------]  51%
+1.430  30/39 [=====================>------]  76%
+1.506  39/39 [============================] 100%
+1.527 Generating optimized autoload files
+3.706 > Illuminate\Foundation\ComposerScripts::postAutoloadDump
+3.727 > @php artisan package:discover --ansi
+3.770 Could not open input file: artisan
+3.775 Script @php artisan package:discover --ansi handling the post-autoload-dump event returned with error code 1
+------
+Dockerfile:42
+
+--------------------
+
+  40 |
+
+  41 |     # Install Laravel dependencies
+
+  42 | >>> RUN composer install --no-dev --optimize-autoloader
+
+  43 |
+
+  44 |     # Set proper permissions
+
+--------------------
+
+target backend: failed to solve: process "/bin/sh -c composer install --no-dev --optimize-autoloader" did not complete successfully: exit code: 1
