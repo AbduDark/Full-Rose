@@ -1,0 +1,807 @@
+{
+  "introSection": {
+    "title": "أذكى طريقة لـ <span>التعلم</span> والتفوق في الثانوية العامة",
+    "description": "انضم إلى منصتنا المصممة لطلاب الثانوية العامة. دروس، كورسات، امتحانات تدريبية وموارد تعليمية تساعدك على النجاح.",
+    "startCourse": "ابدأ الكورس",
+    "signup": "إنشاء حساب طالب",
+    "languageSelector": "اختر اللغة",
+    "imageAlt": "مقدمة التعلم للثانوية العامة"
+  },
+  "header": {
+    "home": "الرئيسية",
+    "courses": "الدورات",
+    "about": "حول",
+    "contact": "اتصل بنا",
+    "login": "تسجيل الدخول",
+    "logout": "تسجيل الخروج",
+    "profile": "الملف الشخصي",
+    "subscriptions": "اشتراكاتي",
+    "notifications": "الإشعارات",
+    "dashboard": "لوحة التحكم",
+    "search": "بحث",
+    "searchPlaceholder": "ابحث في الدورات..."
+  },
+  "features": {
+    "title": "المميزات المتاحة للجميع",
+    "subtitle": "إذا كنت تبحث عن شرائط فارغة على الويب، قد تكون مرتبكًا جدًا من الاختلاف في السعر. قد ترى بعضها بسعر منخفض يصل إلى 0.17 دولار لكل منها.",
+    "instantAccess": {
+      "title": "وصول فوري بعد الشراء",
+      "description": "بمجرد شراء دورة، يتم تفعيل حسابك فورًا ويمكنك البدء في التعلم على الفور دون أي تأخير."
+    },
+    "videoLessons": {
+      "title": "دروس فيديو وملاحظات قابلة للتحميل",
+      "description": "تتضمن كل دورة دروس فيديو عالية الجودة وملاحظات PDF قابلة للتحميل تغطي المنهج الكامل بطريقة واضحة ومنظمة."
+    },
+    "interactiveQuizzes": {
+      "title": "اختبارات تفاعلية وتقييمات",
+      "description": "بعد كل وحدة، ستجد اختبارات تفاعلية لاختبار فهمك وتتبع تقدمك بفعالية."
+    }
+  },
+  "popularCourses": {
+    "title": "الدورات الرائجة",
+    "subtitle": "لوريم إيبسوم دولور سيت أميت كونسكتيتور، أديبيسكينغ إيليت.",
+    "more": "المزيد"
+  },
+  "recentCourses": {
+    "title": "الدورات الحديثة",
+    "subtitle": "استكشف أحدث دوراتنا وابدأ رحلة التعلم الخاصة بك اليوم",
+    "viewAll": "عرض جميع الدورات"
+  },
+  "reviewSection": {
+    "title": "ماذا يقول طلابنا",
+    "subtitle": "اكتشف ما يعتقده مجتمعنا حول دوراتنا وتجربة التعلم",
+    "rating": "التقييم",
+    "students": "طالب"
+  },
+  "footer": {
+    "about": "حول",
+    "aboutDescription": "روز هي منصة تعليمية رائدة عبر الإنترنت توفر دورات عالية الجودة لمساعدتك في تحقيق أهدافك التعليمية.",
+    "quickLinks": "روابط سريعة",
+    "home": "الرئيسية",
+    "courses": "الدورات",
+    "about": "حول",
+    "contact": "اتصل بنا",
+    "contactInfo": "معلومات الاتصال",
+    "email": "البريد الإلكتروني",
+    "phone": "الهاتف",
+    "address": "العنوان",
+    "followUs": "تابعنا",
+    "copyright": "© 2025 روز. جميع الحقوق محفوظة.",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsOfService": "شروط الخدمة"
+  },
+  "mySubscriptions": {
+    "title": "اشتراكاتي",
+    "noSubscriptions": "لم يتم العثور على اشتراكات",
+    "explore": "استكشف دوراتنا لتبدأ!",
+    "instructor": "المدرب",
+    "level": "المستوى",
+    "duration": "المدة",
+    "price": "السعر",
+    "subscribed": "تاريخ الاشتراك",
+    "expires": "تاريخ الانتهاء",
+    "description": "الوصف",
+    "viewCourse": "عرض الدورة",
+    "error": {
+      "login": "يرجى تسجيل الدخول لعرض اشتراكاتك.",
+      "fetchFailed": "فشل في جلب الاشتراكات. حاول مرة أخرى."
+    }
+  },
+  "common": {
+    "loading": "جاري التحميل...",
+    "error": "حدث خطأ",
+    "retry": "إعادة المحاولة",
+    "cancel": "إلغاء",
+    "save": "حفظ",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "confirm": "تأكيد",
+    "back": "رجوع",
+    "next": "التالي",
+    "previous": "السابق",
+    "submit": "إرسال",
+    "close": "إغلاق",
+    "open": "فتح",
+    "yes": "نعم",
+    "no": "لا"
+  },
+  "aboutPage": {
+    "title": "حولنا",
+    "subtitle": "مرحباً بك في إديوكيشن. تمكين العقول. تشكيل المستقبل. في إديوكيشن، نحن ملتزمون بالتميز الأكاديمي والبحث الرائد ومجتمع نابض بالحياة يعزز الابتكار والنمو. استكشف برامجنا، والتق بمدرسيننا، واكتشف حرم جامعي حيث يزدهر إمكاناتك.",
+    "historyTitle": "تاريخ إديوكيشن",
+    "historyText1": "في 8 سبتمبر 1971، تم تأسيس إديوكيشن، أول كلية في المستعمرات الأمريكية، في كامبريدج، ماساتشوستس. تم تأسيس جامعة إديوكيشن رسمياً من خلال تصويت من المحكمة العظمى والعامة لمستعمرة خليج ماساتشوستس.",
+    "historyText2": "بدأت هبة إديوكيشن مع التبرع الأولي لجون إديوكيشن بـ 400 كتاب ونصف ممتلكاته، ولكن في عام 1721، بدأ توماس هوليس الممارسة القياسية الآن المتمثلة في اشتراط استخدام التبرع لغرض محدد عندما تبرع بالمال لـ \"أستاذ اللاهوت، لقراءة المحاضرات في القاعات للطلاب.\"",
+    "contactUs": "اتصل بنا",
+    "faqTitle": "الأسئلة الشائعة للجامعة",
+    "faqSubtitle": "اعثر على إجابات للأسئلة الشائعة حول برامج جامعة ويب سايت والقبول والحياة الطلابية.",
+    "faqs": [
+      {
+        "question": "كيف أتقدم بطلب للانضمام إلى جامعة فيوتشر فيجن؟",
+        "answer": "يمكنك التقديم عبر الإنترنت من خلال بوابة القبول الخاصة بنا عن طريق ملء نموذج الطلب وإرسال المستندات المطلوبة، مثل النصوص الدراسية والبيان الشخصي وخطابات التوصية."
+      },
+      {
+        "question": "ما البرامج التي تقدمها جامعة فيوتشر فيجن؟",
+        "answer": "نحن نقدم مجموعة متنوعة من البرامج الجامعية والدراسات العليا في مجالات مثل علوم الحاسوب والهندسة وإدارة الأعمال والطب والفنون."
+      },
+      {
+        "question": "ما متطلبات القبول؟",
+        "answer": "تختلف متطلبات القبول حسب البرنامج، ولكنها تشمل عادةً طلب مكتمل وشهادة الثانوية العامة أو ما يعادلها والنصوص الدراسية ومعدل تراكمي أدنى. قد تتطلب بعض البرامج امتحانات دخول أو مقابلات."
+      },
+      {
+        "question": "كم تبلغ الرسوم الدراسية في جامعة فيوتشر فيجن؟",
+        "answer": "تعتمد الرسوم الدراسية على البرنامج ومستوى الدراسة. في المتوسط، تبدأ البرامج الجامعية من 3000 دولار لكل فصل دراسي. يرجى الرجوع إلى صفحة الرسوم الدراسية للحصول على معلومات مفصلة."
+      },
+      {
+        "question": "هل تقدم جامعة فيوتشر فيجن دورات عبر الإنترنت؟",
+        "answer": "نعم، نحن نقدم مجموعة من الدورات الكاملة عبر الإنترنت والدورات المختلطة للطلاب الذين يفضلون خيارات التعلم المرنة."
+      },
+      {
+        "question": "ما المرافق المتاحة في الحرم الجامعي؟",
+        "answer": "يشمل حرمنا الجامعي قاعات محاضرات حديثة ومختبرات ومكتبات ومراكز حاسوب ومجمعات رياضية وصالات طلابية وسكن في الحرم الجامعي."
+      },
+      {
+        "question": "هل تتوفر منح دراسية في جامعة فيوتشر فيجن؟",
+        "answer": "نعم، نحن نقدم منح دراسية قائمة على الجدارة والحاجة لكل من الطلاب المحليين والدوليين. مواعيد التقديم والمعايير مدرجة في صفحة المنح الدراسية."
+      },
+      {
+        "question": "ما خدمات دعم الطلاب المتوفرة؟",
+        "answer": "نحن نقدم التوجيه الأكاديمي والإرشاد المهني وخدمات الصحة النفسية والدروس الخصوصية ومركز نجاح الطلاب المخصص."
+      },
+      {
+        "question": "كيف أتواصل مع مكتب القبول؟",
+        "answer": "يمكنك الوصول إلى مكتب القبول عبر البريد الإلكتروني على mohamedgomaafathi@gmail.com أو الاتصال بنا على +20 112 657 6004. ساعات العمل من الأحد إلى الخميس، من 9:00 صباحاً إلى 4:00 مساءً."
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "اتصل بنا",
+    "subtitle": "نحن هنا للمساعدة. هل لديك أسئلة حول القبول أو البرامج أو الحياة الجامعية؟ تواصل معنا - نحن سعداء بمساعدتك.",
+    "contactInfo": "معلومات الاتصال",
+    "phone": "الهاتف",
+    "email": "البريد الإلكتروني",
+    "location": "الموقع",
+    "followOn": "تابعنا على:",
+    "socialLinks": {
+      "facebook": "فيسبوك",
+      "twitter": "تويتر",
+      "linkedin": "لينكد إن",
+      "github": "جيثب",
+      "telegram": "تلجرام",
+      "mail": "البريد"
+    }
+  },
+  "courseDetailPage": {
+    "courseNotFound": "لم يتم العثور على الدورة",
+    "overview": "نظرة عامة",
+    "instructor": "المدرب",
+    "reviews": "التقييمات"
+  },
+  "coursesPage": {
+    "pageTitle": "جميع الدورات",
+    "pageSubtitle": "استكشف مجموعتنا الشاملة من الدورات المصممة لمساعدتك في تحقيق أهدافك التعليمية"
+  },
+  "headerAllCourses": {
+    "title": "الدورات",
+    "subtitle": "لوريم إيبسوم دولور سيت أميت كونسكتيتور، أديبيسكينغ إيليت. فولوباتيس دولور كويبوسدام سيت سيكوي إيلو."
+  },
+  "cardCourse": {
+    "noRating": "لا يوجد تقييم",
+    "hours": "ساعات",
+    "lessons": "دروس",
+    "instructor": "المدرب",
+    "error": "خطأ"
+  },
+  "enrollCourse": {
+    "enrollError": "يرجى تسجيل الدخول للانضمام إلى هذه الدورة",
+    "enrollSuccess": "تم الانضمام إلى الدورة بنجاح!",
+    "subscriptionDetails": "تفاصيل الاشتراك",
+    "vodafoneNumber": "رقم فودافون",
+    "vodafonePlaceholder": "أدخل رقم فودافون",
+    "amount": "المبلغ",
+    "amountPlaceholder": "أدخل المبلغ",
+    "parentPhone": "هاتف الوالد",
+    "parentPhonePlaceholder": "أدخل رقم هاتف الوالد",
+    "studentInfo": "معلومات الطالب",
+    "studentInfoPlaceholder": "أدخل معلومات الطالب",
+    "cancel": "إلغاء",
+    "enrollNow": "انضم الآن",
+    "processing": "جاري المعالجة...",
+    "confirmSubscription": "تأكيد الاشتراك",
+    "courseIncludes": "تتضمن هذه الدورة",
+    "price": "السعر",
+    "episodes": "الحلقات",
+    "date": "التاريخ"
+  },
+  "overviewCourse": {
+    "overview": "نظرة عامة",
+    "description": "وصف الدورة",
+    "curriculum": "المنهج الدراسي",
+    "noEpisodes": "لا توجد حلقات متاحة لهذه الدورة",
+    "subscribeToView": "يجب عليك الاشتراك لعرض حلقات الدورة.",
+    "whatYouWillLearn": "ماذا ستتعلم",
+    "requirements": "المتطلبات",
+    "targetAudience": "الجمهور المستهدف"
+  },
+  "reviewCourse": {
+    "reviews": "التقييمات",
+    "studentReviews": "تقييمات الطلاب",
+    "loadingReviews": "جاري تحميل التقييمات...",
+    "basedOnAverage": "(بناءً على متوسط التقييم)",
+    "noReviews": "لا توجد تقييمات بعد",
+    "leaveReview": "اترك تقييم",
+    "provideRatingAndText": "يرجى تقديم التقييم ونص المراجعة",
+    "loginToReview": "يجب عليك تسجيل الدخول لنشر تقييم.",
+    "sessionExpired": "انتهت صلاحية الجلسة. إعادة توجيه لتسجيل الدخول...",
+    "yourRating": "تقييمك",
+    "yourReview": "مراجعتك",
+    "postReview": "نشر التقييم",
+    "beFirstToReview": "كن أول من يقيم هذه الدورة",
+    "addReview": "أضف تقييم",
+    "rating": "التقييم",
+    "comment": "التعليق",
+    "submitReview": "إرسال التقييم",
+    "reviewSubmitted": "تم إرسال التقييم بنجاح!",
+    "reviewError": "خطأ في إرسال التقييم. حاول مرة أخرى."
+  },
+  "headerCourse": {
+    "backToCourses": "العودة إلى الدورات",
+    "courseDetails": "تفاصيل الدورة",
+    "lastUpdated": "آخر تحديث"
+  },
+  "instructorCourse": {
+    "instructor": "المدرب",
+    "aboutInstructor": "حول المدرب",
+    "expertise": "الخبرة",
+    "experience": "الخبرة",
+    "contactInstructor": "اتصل بالمدرب",
+    "noInstructorInfo": "لا توجد معلومات المدرب متاحة"
+  },
+  "filtersCourses": {
+    "filterBy": "تصفية حسب",
+    "allLevels": "جميع المستويات",
+    "beginner": "مبتدئ",
+    "intermediate": "متوسط",
+    "advanced": "متقدم",
+    "sortBy": "ترتيب حسب",
+    "newest": "الأحدث",
+    "oldest": "الأقدم",
+    "priceLowToHigh": "السعر: من الأقل إلى الأعلى",
+    "priceHighToLow": "السعر: من الأعلى إلى الأقل",
+    "rating": "التقييم",
+    "clearFilters": "مسح المرشحات",
+    "description": "تحقق من جميع الدورات المباشرة المتاحة لك. انضم إلى أي دورة متاحة أدناه.",
+    "allCategories": "جميع الفئات"
+  },
+  "pagination": {
+    "previous": "السابق",
+    "next": "التالي",
+    "page": "الصفحة",
+    "of": "من"
+  },
+  "auth": {
+    "login": {
+      "title": "تسجيل الدخول",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "forgotPassword": "نسيت كلمة المرور؟",
+      "loginButton": "تسجيل الدخول",
+      "noAccount": "ليس لديك حساب؟",
+      "signup": "إنشاء حساب",
+      "loginFailed": "فشل تسجيل الدخول. حاول مرة أخرى.",
+      "loginWithFacebook": "تسجيل الدخول بفيسبوك",
+      "loginWithGoogle": "تسجيل الدخول بجوجل",
+      "or": "أو"
+    },
+    "register": {
+      "title": "إنشاء حساب",
+      "fullName": "الاسم الكامل",
+      "email": "البريد الإلكتروني",
+      "createPassword": "إنشاء كلمة مرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "phone": "رقم الهاتف",
+      "gender": "الجنس",
+      "male": "ذكر",
+      "female": "أنثى",
+      "signupButton": "إنشاء حساب",
+      "creatingAccount": "جاري إنشاء الحساب...",
+      "alreadyHaveAccount": "لديك حساب بالفعل؟",
+      "login": "تسجيل الدخول",
+      "signupWithFacebook": "إنشاء حساب بفيسبوك",
+      "signupWithGoogle": "إنشاء حساب بجوجل",
+      "validation": {
+        "fullNameRequired": "الاسم الكامل مطلوب",
+        "emailRequired": "البريد الإلكتروني مطلوب",
+        "validEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+        "passwordRequired": "كلمة المرور مطلوبة",
+        "passwordLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+        "passwordsNotMatch": "كلمات المرور غير متطابقة",
+        "genderRequired": "يرجى اختيار الجنس"
+      },
+      "success": {
+        "title": "تم إنشاء الحساب بنجاح!",
+        "description": "تم إنشاء حسابك. يرجى التحقق من بريدك الإلكتروني والنقر على رابط التفعيل للتحقق من حسابك.",
+        "note": "ستتمكن من تسجيل الدخول بعد التحقق من بريدك الإلكتروني.",
+        "goToLogin": "الذهاب لتسجيل الدخول"
+      }
+    },
+    "forgotPassword": {
+      "title": "نسيت كلمة المرور",
+      "emailPlaceholder": "أدخل بريدك الإلكتروني",
+      "sendResetLink": "إرسال رابط إعادة التعيين",
+      "rememberPassword": "تذكرت كلمة المرور؟",
+      "backToLogin": "العودة لتسجيل الدخول",
+      "success": {
+        "title": "تم إرسال رابط إعادة تعيين كلمة المرور!",
+        "description": "لقد أرسلنا رابط إعادة تعيين كلمة المرور إلى بريدك الإلكتروني. يرجى التحقق من صندوق الوارد (ومجلد الرسائل غير المرغوب فيها) للمتابعة في إعادة تعيين كلمة المرور.",
+        "note": "سينتهي الرابط بعد فترة زمنية معينة لأسباب أمنية.",
+        "backToLogin": "العودة لتسجيل الدخول"
+      },
+      "error": "حدث خطأ. حاول مرة أخرى.",
+      "successMessage": "إذا كان البريد الإلكتروني موجود، تم إرسال رابط إعادة تعيين كلمة المرور."
+    },
+    "resetPassword": {
+      "title": "إعادة تعيين كلمة المرور",
+      "emailPlaceholder": "أدخل بريدك الإلكتروني",
+      "pinPlaceholder": "أدخل الرمز السري",
+      "createPassword": "إنشاء كلمة مرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "resetButton": "إعادة تعيين كلمة المرور",
+      "rememberPassword": "تذكرت كلمة المرور؟",
+      "backToLogin": "العودة لتسجيل الدخول",
+      "successMessage": "تم إعادة تعيين كلمة المرور بنجاح.",
+      "error": "حدث خطأ. حاول مرة أخرى."
+    },
+    "verifyEmail": {
+      "title": "تحقق من بريدك الإلكتروني",
+      "emailPlaceholder": "البريد الإلكتروني (مثال: ahmed.student@example.com)",
+      "pinPlaceholder": "الرمز السري (مثال: 123456)",
+      "verifyButton": "تحقق من البريد الإلكتروني",
+      "verifying": "جاري التحقق...",
+      "alreadyVerified": "تم التحقق بالفعل؟",
+      "backToLogin": "العودة لتسجيل الدخول",
+      "successMessage": "تم التحقق من بريدك الإلكتروني بنجاح! يمكنك الآن تسجيل الدخول.",
+      "error": "بريد إلكتروني أو رمز سري غير صحيح. حاول مرة أخرى.",
+      "verificationFailed": "فشل في التحقق من البريد الإلكتروني. حاول مرة أخرى أو اطلب رمز سري جديد."
+    }
+  },
+  "notifications": {
+    "title": "الإشعارات",
+    "loadingNotifications": "جاري تحميل الإشعارات...",
+    "noNotifications": "لا توجد إشعارات بعد",
+    "noNotificationsDescription": "أنت محدث بالكامل! تحقق مرة أخرى لاحقاً للحصول على تحديثات جديدة.",
+    "markAllAsRead": "تحديد الكل كمقروء",
+    "markAsRead": "تحديد كمقروء",
+    "delete": "حذف",
+    "viewDetails": "عرض التفاصيل",
+    "failedToFetch": "فشل في جلب الإشعارات",
+    "errorLoading": "خطأ في تحميل الإشعارات",
+    "errorMarkingAllRead": "خطأ في تحديد الكل كمقروء",
+    "errorMarkingRead": "خطأ في تحديد كمقروء",
+    "errorDeleting": "خطأ في حذف الإشعار",
+    "justNow": "الآن",
+    "minutesAgo": "دقيقة مضت",
+    "hoursAgo": "ساعة مضت",
+    "daysAgo": "يوم مضى",
+    "course": "الدورة",
+    "page": "الصفحة",
+    "of": "من",
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "studentDashboard": {
+    "title": "لوحة تحكم الطالب",
+    "courses": "الدورات",
+    "editProfile": "تعديل الملف الشخصي",
+    "changePassword": "تغيير كلمة المرور",
+    "deleteAccount": "حذف الحساب",
+    "noProfileData": "لا توجد بيانات ملف شخصي متاحة.",
+    "selectTabToView": "اختر تبويب لعرض المحتوى.",
+    "failedToLoadProfile": "فشل في تحميل الملف الشخصي",
+    "noAuthToken": "لم يتم توفير رمز مصادقة"
+  },
+  "userProfile": {
+    "title": "تعديل الملف الشخصي",
+    "studentProfile": "ملف الطالب الشخصي",
+    "editStudentProfile": "تعديل ملف الطالب الشخصي",
+    "fullName": "الاسم الكامل",
+    "name": "الاسم",
+    "email": "البريد الإلكتروني",
+    "phone": "رقم الهاتف",
+    "gender": "الجنس",
+    "male": "ذكر",
+    "female": "أنثى",
+    "saveChanges": "حفظ التغييرات",
+    "saving": "جاري الحفظ...",
+    "edit": "تعديل",
+    "cancel": "إلغاء",
+    "change": "تغيير",
+    "profilePicture": "صورة الملف الشخصي",
+    "profileUpdated": "تم تحديث الملف الشخصي بنجاح!",
+    "updateError": "فشل في تحديث الملف الشخصي",
+    "validation": {
+      "nameRequired": "الاسم مطلوب",
+      "fullNameRequired": "الاسم الكامل مطلوب",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "validEmail": "يرجى إدخال عنوان بريد إلكتروني صحيح",
+      "phoneRequired": "رقم الهاتف مطلوب"
+    }
+  },
+  "changePassword": {
+    "title": "تغيير كلمة المرور",
+    "currentPassword": "كلمة المرور الحالية",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+    "saveChanges": "حفظ التغييرات",
+    "saving": "جاري الحفظ...",
+    "clear": "مسح",
+    "passwordChanged": "تم تغيير كلمة المرور بنجاح!",
+    "changeError": "خطأ في تغيير كلمة المرور. حاول مرة أخرى.",
+    "validation": {
+      "allFieldsRequired": "جميع حقول كلمة المرور مطلوبة",
+      "currentPasswordRequired": "كلمة المرور الحالية مطلوبة",
+      "newPasswordRequired": "كلمة المرور الجديدة مطلوبة",
+      "passwordLength": "يجب أن تكون كلمة المرور 6 أحرف على الأقل",
+      "passwordsNotMatch": "كلمة المرور الجديدة والتأكيد غير متطابقين"
+    }
+  },
+  "deleteAccount": {
+    "title": "حذف الحساب",
+    "warning": "تحذير: لا يمكن التراجع عن هذا الإجراء!",
+    "description": "حذف حسابك سيؤدي إلى إزالة جميع بياناتك نهائياً، بما في ذلك الدورات والاشتراكات والمعلومات الشخصية.",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "deleteAccount": "حذف الحساب",
+    "deleting": "جاري الحذف...",
+    "accountDeleted": "تم حذف الحساب بنجاح!",
+    "deleteError": "خطأ في حذف الحساب. حاول مرة أخرى.",
+    "validation": {
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "passwordIncorrect": "كلمة المرور غير صحيحة"
+    }
+  },
+  "lessons": {
+    "title": "دروس الدورة",
+    "sidebar": {
+      "title": "محتوى الدورة",
+      "episodes": "الحلقات",
+      "noEpisodes": "لا توجد حلقات متاحة",
+      "currentEpisode": "الحلقة الحالية"
+    },
+    "videoPlayer": {
+      "loading": "جاري تحميل الفيديو...",
+      "error": "خطأ في تحميل الفيديو",
+      "play": "تشغيل",
+      "pause": "إيقاف مؤقت",
+      "fullscreen": "ملء الشاشة",
+      "volume": "مستوى الصوت"
+    },
+    "comments": {
+      "title": "التعليقات",
+      "addComment": "أضف تعليقاً...",
+      "postComment": "نشر التعليق",
+      "posting": "جاري النشر...",
+      "noComments": "لا توجد تعليقات بعد. كن أول من يعلق!",
+      "loadingComments": "جاري تحميل التعليقات...",
+      "commentPosted": "تم نشر التعليق بنجاح!",
+      "commentError": "خطأ في نشر التعليق. حاول مرة أخرى.",
+      "loginToComment": "يرجى تسجيل الدخول لنشر تعليق.",
+      "validation": {
+        "commentRequired": "التعليق مطلوب"
+      }
+    },
+    "courseInfo": {
+      "title": "معلومات الدورة",
+      "instructor": "المدرب",
+      "duration": "المدة",
+      "episodes": "الحلقات",
+      "level": "المستوى",
+      "description": "الوصف"
+    }
+  },
+  "subscriptionsPage": {
+    "title": "الاشتراكات",
+    "noSubscriptions": "لم يتم العثور على اشتراكات",
+    "exploreCourses": "استكشف دوراتنا لتبدأ!"
+  },
+  "adminDashboard": {
+    "title": "لوحة تحكم المدير",
+    "overview": "نظرة عامة",
+    "courses": "الدورات",
+    "lessons": "الدروس",
+    "subscriptions": "الاشتراكات",
+    "users": "المستخدمون",
+    "notifications": "الإشعارات",
+    "backToHome": "العودة للرئيسية",
+    "logout": "تسجيل الخروج",
+    "subscriptionsManager": {
+      "title": "إدارة الاشتراكات",
+      "allSubscriptions": "جميع الاشتراكات",
+      "pendingSubscriptions": "الاشتراكات المعلقة",
+      "createSubscription": "إنشاء اشتراك",
+      "searchSubscriptions": "البحث في الاشتراكات",
+      "filterByStatus": "تصفية حسب الحالة",
+      "filterByCourse": "تصفية حسب الدورة",
+      "allStatuses": "جميع الحالات",
+      "allCourses": "جميع الدورات",
+      "noSubscriptionsFound": "لم يتم العثور على اشتراكات",
+      "loadingSubscriptions": "جاري تحميل الاشتراكات...",
+      "failedToFetch": "فشل في جلب الاشتراكات",
+      "approveSuccess": "تم الموافقة على الاشتراك بنجاح",
+      "rejectSuccess": "تم رفض الاشتراك بنجاح",
+      "approveError": "فشل في الموافقة على الاشتراك",
+      "rejectError": "فشل في رفض الاشتراك",
+      "viewMode": {
+        "all": "الكل",
+        "pending": "معلق"
+      }
+    },
+    "cardSubscription": {
+      "unknownCourse": "دورة غير معروفة",
+      "unknownLevel": "غير معروف",
+      "unknownInstructor": "غير معروف",
+      "notSet": "غير محدد",
+      "free": "مجاني",
+      "studentInformation": "معلومات الطالب",
+      "unknownStudent": "غير معروف",
+      "noEmail": "لا يوجد بريد إلكتروني",
+      "parent": "ولي الأمر",
+      "subscriptionDetails": "تفاصيل الاشتراك",
+      "subscribed": "تاريخ الاشتراك",
+      "expires": "تاريخ الانتهاء",
+      "notes": "ملاحظات",
+      "adminNotes": "ملاحظات المدير",
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "id": "الرقم التعريفي",
+      "price": "السعر",
+      "duration": "المدة",
+      "hours": "ساعات",
+      "instructor": "المدرب",
+      "grade": "الصف الدراسي",
+      "pending": "معلق",
+      "approved": "موافق عليه",
+      "rejected": "مرفوض",
+      "approveSubscription": "الموافقة على الاشتراك",
+      "rejectSubscription": "رفض الاشتراك",
+      "editSubscription": "تعديل الاشتراك",
+      "deleteSubscription": "حذف الاشتراك"
+    },
+    "createSubscription": {
+      "title": "إنشاء اشتراك جديد",
+      "selectUser": "اختر المستخدم",
+      "selectCourse": "اختر الدورة",
+      "vodafoneNumber": "رقم فودافون",
+      "vodafonePlaceholder": "أدخل رقم فودافون",
+      "parentPhone": "هاتف ولي الأمر",
+      "parentPhonePlaceholder": "أدخل رقم هاتف ولي الأمر",
+      "studentInfo": "معلومات الطالب",
+      "studentInfoPlaceholder": "أدخل معلومات الطالب",
+      "adminNotes": "ملاحظات المدير",
+      "adminNotesPlaceholder": "أدخل ملاحظات المدير",
+      "status": "الحالة",
+      "pending": "معلق",
+      "approved": "موافق عليه",
+      "rejected": "مرفوض",
+      "createButton": "إنشاء الاشتراك",
+      "creating": "جاري الإنشاء...",
+      "createSuccess": "تم إنشاء الاشتراك بنجاح",
+      "createError": "فشل في إنشاء الاشتراك",
+      "validation": {
+        "userRequired": "المستخدم مطلوب",
+        "courseRequired": "الدورة مطلوبة",
+        "vodafoneRequired": "رقم فودافون مطلوب",
+        "parentPhoneRequired": "هاتف ولي الأمر مطلوب"
+      }
+    },
+    "updateSubscription": {
+      "title": "تحديث الاشتراك",
+      "updateButton": "تحديث الاشتراك",
+      "updating": "جاري التحديث...",
+      "updateSuccess": "تم تحديث الاشتراك بنجاح",
+      "updateError": "فشل في تحديث الاشتراك"
+    },
+    "deleteSubscription": {
+      "title": "حذف الاشتراك",
+      "confirmMessage": "هل أنت متأكد من حذف هذا الاشتراك؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "deleteButton": "حذف الاشتراك",
+      "deleting": "جاري الحذف...",
+      "deleteSuccess": "تم حذف الاشتراك بنجاح",
+      "deleteError": "فشل في حذف الاشتراك"
+    },
+    "searchSubscription": {
+      "title": "البحث في الاشتراكات",
+      "searchPlaceholder": "ابحث باسم الطالب، البريد الإلكتروني، الدورة، أو الهاتف...",
+      "searchButton": "بحث",
+      "clearButton": "مسح",
+      "noResults": "لم يتم العثور على اشتراكات تطابق معايير البحث"
+    },
+    "userManager": {
+      "title": "إدارة المستخدمين",
+      "addUser": "إضافة مستخدم",
+      "searchUsers": "البحث في المستخدمين",
+      "filterByRole": "تصفية حسب الدور",
+      "filterByGender": "تصفية حسب الجنس",
+      "allRoles": "جميع الأدوار",
+      "allGenders": "جميع الأجناس",
+      "noUsersFound": "لم يتم العثور على مستخدمين",
+      "loadingUsers": "جاري تحميل المستخدمين...",
+      "failedToFetch": "فشل في جلب المستخدمين",
+      "createSuccess": "تم إنشاء المستخدم بنجاح",
+      "createError": "فشل في إنشاء المستخدم",
+      "updateSuccess": "تم تحديث المستخدم بنجاح",
+      "updateError": "فشل في تحديث المستخدم",
+      "deleteSuccess": "تم حذف المستخدم بنجاح",
+      "deleteError": "فشل في حذف المستخدم"
+    },
+    "cardUser": {
+      "unknownUser": "مستخدم غير معروف",
+      "noEmail": "لا يوجد بريد إلكتروني",
+      "noPhone": "لا يوجد هاتف",
+      "userInformation": "معلومات المستخدم",
+      "role": "الدور",
+      "gender": "الجنس",
+      "male": "ذكر",
+      "female": "أنثى",
+      "student": "طالب",
+      "admin": "مدير",
+      "instructor": "مدرب",
+      "active": "نشط",
+      "inactive": "غير نشط",
+      "id": "الرقم التعريفي",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "editUser": "تعديل المستخدم",
+      "deleteUser": "حذف المستخدم"
+    },
+    "createUser": {
+      "title": "إنشاء مستخدم جديد",
+      "fullName": "الاسم الكامل",
+      "enterFullName": "أدخل الاسم الكامل",
+      "emailAddress": "عنوان البريد الإلكتروني",
+      "enterEmail": "أدخل عنوان البريد الإلكتروني",
+      "phoneNumber": "رقم الهاتف",
+      "enterPhone": "أدخل رقم الهاتف",
+      "gender": "الجنس",
+      "male": "ذكر",
+      "female": "أنثى",
+      "password": "كلمة المرور",
+      "enterPassword": "أدخل كلمة المرور",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "confirmPasswordPlaceholder": "تأكيد كلمة المرور",
+      "cancel": "إلغاء",
+      "creating": "جاري الإنشاء...",
+      "createUser": "إنشاء المستخدم"
+    },
+    "updateUser": {
+      "title": "تحديث المستخدم",
+      "fullName": "الاسم الكامل",
+      "enterFullName": "أدخل الاسم الكامل",
+      "emailAddress": "عنوان البريد الإلكتروني",
+      "enterEmail": "أدخل عنوان البريد الإلكتروني",
+      "phoneNumber": "رقم الهاتف",
+      "enterPhone": "أدخل رقم الهاتف",
+      "gender": "الجنس",
+      "male": "ذكر",
+      "female": "أنثى",
+      "cancel": "إلغاء",
+      "updating": "جاري التحديث...",
+      "updateUser": "تحديث المستخدم"
+    },
+    "deleteUser": {
+      "title": "حذف المستخدم",
+      "confirmationMessage": "هل أنت متأكد من حذف \"{{name}}\"؟ لا يمكن التراجع عن هذا الإجراء.",
+      "cancel": "لا، إلغاء",
+      "deleting": "جاري الحذف...",
+      "confirm": "نعم، أنا متأكد"
+    },
+    "searchUser": {
+      "title": "البحث في المستخدمين",
+      "searchPlaceholder": "ابحث بالاسم، البريد الإلكتروني، أو الهاتف...",
+      "searchButton": "بحث",
+      "clearButton": "مسح",
+      "noResults": "لم يتم العثور على مستخدمين تطابق معايير البحث"
+    },
+    "notificationsManager": {
+      "title": "إدارة الإشعارات",
+      "sendNotification": "إرسال إشعار",
+      "searchNotifications": "البحث في الإشعارات",
+      "filterByType": "تصفية حسب النوع",
+      "allTypes": "جميع الأنواع",
+      "noNotificationsFound": "لم يتم العثور على إشعارات",
+      "loadingNotifications": "جاري تحميل الإشعارات...",
+      "failedToFetch": "فشل في جلب البيانات",
+      "sendSuccess": "تم إرسال الإشعار بنجاح",
+      "sendError": "فشل في إرسال الإشعار",
+      "statistics": {
+        "totalNotifications": "إجمالي الإشعارات",
+        "sentToday": "المرسلة اليوم",
+        "readNotifications": "الإشعارات المقروءة",
+        "unreadNotifications": "الإشعارات غير المقروءة"
+      }
+    },
+    "cardNotification": {
+      "unknownUser": "مستخدم غير معروف",
+      "notificationDetails": "تفاصيل الإشعار",
+      "title": "العنوان",
+      "message": "الرسالة",
+      "type": "النوع",
+      "status": "الحالة",
+      "sent": "مرسل",
+      "read": "مقروء",
+      "unread": "غير مقروء",
+      "id": "الرقم التعريفي",
+      "recipient": "المستلم",
+      "editNotification": "تعديل الإشعار",
+      "deleteNotification": "حذف الإشعار",
+      "general": "عام",
+      "course": "دورة",
+      "system": "نظام",
+      "additionalData": "بيانات إضافية",
+      "lessonId": "معرف الدرس",
+      "url": "الرابط"
+    },
+    "createNotification": {
+      "title": "إرسال إشعار",
+      "notificationTitle": "عنوان الإشعار",
+      "enterTitle": "أدخل عنوان الإشعار",
+      "message": "الرسالة",
+      "enterMessage": "أدخل رسالة الإشعار",
+      "type": "النوع",
+      "general": "عام",
+      "course": "دورة",
+      "system": "نظام",
+      "gender": "الجنس",
+      "allGenders": "جميع الأجناس",
+      "male": "ذكر",
+      "female": "أنثى",
+      "selectCourse": "اختر دورة",
+      "additionalData": "بيانات إضافية",
+      "lessonId": "معرف الدرس",
+      "optionalLessonId": "معرف الدرس (اختياري)",
+      "url": "الرابط",
+      "optionalUrl": "الرابط (اختياري)",
+      "cancel": "إلغاء",
+      "sending": "جاري الإرسال...",
+      "sendNotification": "إرسال الإشعار"
+    },
+    "searchNotification": {
+      "title": "البحث في الإشعارات",
+      "searchPlaceholder": "ابحث بالعنوان، الرسالة، أو المستلم...",
+      "searchButton": "بحث",
+      "clearButton": "مسح",
+      "noResults": "لم يتم العثور على إشعارات تطابق معايير البحث"
+    },
+    "dashboardOverview": {
+      "title": "نظرة عامة على لوحة التحكم",
+      "welcome": "مرحباً بك في لوحة تحكم المدير",
+      "liveDashboard": "لوحة تحكم مباشرة",
+      "loadingDashboard": "جاري تحميل لوحة التحكم...",
+      "failedToFetchStats": "فشل في جلب إحصائيات لوحة التحكم: ",
+      "totalUsers": "إجمالي المستخدمين",
+      "totalCourses": "إجمالي الدورات",
+      "totalSubscriptions": "إجمالي الاشتراكات",
+      "activeSubscriptions": "الاشتراكات النشطة",
+      "thisMonth": "هذا الشهر",
+      "active": "نشط",
+      "approved": "موافق عليه",
+      "progressOverview": "نظرة عامة على التقدم",
+      "activeCourses": "الدورات النشطة",
+      "activeSubscriptions": "الاشتراكات النشطة",
+      "approvedSubscriptions": "الاشتراكات الموافق عليها",
+      "total": "إجمالي",
+      "quickStatistics": "إحصائيات سريعة",
+      "students": "الطلاب",
+      "pending": "في الانتظار",
+      "newUsers": "مستخدمون جدد",
+      "newSubscriptions": "اشتراكات جديدة",
+      "userGrowth": "نمو المستخدمين",
+      "courseActivity": "نشاط الدورات",
+      "subscriptionRate": "معدل الاشتراك",
+      "monthlyGrowthRate": "معدل النمو الشهري",
+      "activeCourses": "الدورات النشطة",
+      "userSubscriptionRate": "معدل اشتراك المستخدمين",
+      "subscriptionStatus": "حالة الاشتراك",
+      "courseActivity": "نشاط الدورات"
+    }
+  }
+}

@@ -1,0 +1,807 @@
+{
+  "introSection": {
+    "title": "The smartest way to <span>learn</span> for high school success",
+    "description": "Join our platform designed for high school students. Access courses, practice exams, and learning resources to achieve your goals.",
+    "startCourse": "Start Course",
+    "signup": "Create Student Account",
+    "languageSelector": "Select Language",
+    "imageAlt": "High school learning introduction"
+  },
+  "header": {
+    "home": "Home",
+    "courses": "Courses",
+    "about": "About",
+    "contact": "Contact Us",
+    "login": "Login",
+    "logout": "Logout",
+    "profile": "Profile",
+    "subscriptions": "My Subscriptions",
+    "dashboard": "Dashboard",
+    "notifications": "Notifications",
+    "search": "Search",
+    "searchPlaceholder": "Search courses..."
+  },
+  "features": {
+    "title": "Features That Can Avail By Everyone",
+    "subtitle": "If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.",
+    "instantAccess": {
+      "title": "Instant Access After Purchase",
+      "description": "Once you purchase a course, your account is activated immediately and you can start learning right away without any delays."
+    },
+    "videoLessons": {
+      "title": "Video Lessons & Downloadable Notes",
+      "description": "Each course includes high-quality video lessons and downloadable PDF notes covering the full curriculum in a clear and organized way."
+    },
+    "interactiveQuizzes": {
+      "title": "Interactive Quizzes & Assessments",
+      "description": "After each unit, you'll find interactive quizzes to test your understanding and track your progress effectively."
+    }
+  },
+  "popularCourses": {
+    "title": "Trending courses",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "more": "More"
+  },
+  "recentCourses": {
+    "title": "Recent Courses",
+    "subtitle": "Explore our latest courses and start your learning journey today",
+    "viewAll": "View All Courses"
+  },
+  "reviewSection": {
+    "title": "What Our Students Say",
+    "subtitle": "Discover what our community thinks about our courses and learning experience",
+    "rating": "Rating",
+    "students": "students"
+  },
+  "footer": {
+    "about": "About",
+    "aboutDescription": "Rose is a leading online learning platform that provides high-quality courses to help you achieve your educational goals.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "courses": "Courses",
+    "about": "About",
+    "contact": "Contact",
+    "contactInfo": "Contact Info",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "followUs": "Follow Us",
+    "copyright": "© 2025 Rose. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service"
+  },
+  "mySubscriptions": {
+    "title": "My Subscriptions",
+    "noSubscriptions": "No subscriptions found",
+    "explore": "Explore our courses to get started!",
+    "instructor": "Instructor",
+    "level": "Level",
+    "duration": "Duration",
+    "price": "Price",
+    "subscribed": "Subscribed",
+    "expires": "Expires",
+    "description": "Description",
+    "viewCourse": "View Course",
+    "error": {
+      "login": "Please log in to view your subscriptions.",
+      "fetchFailed": "Failed to fetch subscriptions. Please try again."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "submit": "Submit",
+    "close": "Close",
+    "open": "Open",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "aboutPage": {
+    "title": "About Us",
+    "subtitle": "Welcome to Eduction Empowering minds. Shaping the future. At Eduction, we are committed to academic excellence, groundbreaking research, and a vibrant community that fosters innovation and growth. Explore our programs, meet our faculty, and discover a campus where your potential thrives.",
+    "historyTitle": "The history of Eduction",
+    "historyText1": "On September 8, 1971, Eduction, the first college in the American colonies, was founded in Cambridge, Massachusetts. Eduction University was officially founded by a vote by the Great and General Court of the Massachusetts Bay Colony.",
+    "historyText2": "Eduction endowment started with John Eduction initial donation of 400 books and half his estate, but in 1721, Thomas Hollis began the now standard practice of requiring that a donation be used for a specific purpose when he donated money for \"a Divinity Professor, to read lectures in the Halls to the students.\"",
+    "contactUs": "Contact Us",
+    "faqTitle": "University FAQs",
+    "faqSubtitle": "Find answers to common questions about Website University programs, admissions, and student life.",
+    "faqs": [
+      {
+        "question": "How do I apply to Future Vision University?",
+        "answer": "You can apply online through our admissions portal by filling out the application form and submitting the required documents, such as transcripts, personal statement, and recommendation letters."
+      },
+      {
+        "question": "What programs does Future Vision University offer?",
+        "answer": "We offer a variety of undergraduate and postgraduate programs in fields such as Computer Science, Engineering, Business Administration, Medicine, and the Arts."
+      },
+      {
+        "question": "What are the admission requirements?",
+        "answer": "Admission requirements vary by program, but generally include a completed application, high school diploma or equivalent, transcripts, and a minimum GPA. Some programs may require entrance exams or interviews."
+      },
+      {
+        "question": "How much is tuition at Future Vision University?",
+        "answer": "Tuition fees depend on the program and level of study. On average, undergraduate programs start from $3,000 per semester. Please refer to our tuition page for detailed information."
+      },
+      {
+        "question": "Does Future Vision University offer online courses?",
+        "answer": "Yes, we offer a range of fully online and hybrid courses for students who prefer flexible learning options."
+      },
+      {
+        "question": "What campus facilities are available?",
+        "answer": "Our campus includes modern lecture halls, laboratories, libraries, computer centers, sports complexes, student lounges, and on-campus housing."
+      },
+      {
+        "question": "Are scholarships available at Future Vision University?",
+        "answer": "Yes, we offer merit-based and need-based scholarships for both domestic and international students. Application deadlines and criteria are listed on the scholarships page."
+      },
+      {
+        "question": "What student support services are offered?",
+        "answer": "We provide academic advising, career counseling, mental health services, tutoring, and a dedicated student success center."
+      },
+      {
+        "question": "How do I contact the admissions office?",
+        "answer": "You can reach the admissions office via email at mohamedgomaafathi@gmail.com or call us at +20 112 657 6004. Office hours are Sunday to Thursday, 9:00 AM to 4:00 PM."
+      }
+    ]
+  },
+  "contactPage": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help. Have questions about admissions, programs, or campus life? Reach out to us—we're happy to assist you.",
+    "contactInfo": "Contact Info",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "followOn": "Follow on:",
+    "socialLinks": {
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "github": "Github",
+      "telegram": "Telegram",
+      "mail": "Mail"
+    }
+  },
+  "courseDetailPage": {
+    "courseNotFound": "Course not found",
+    "overview": "Overview",
+    "instructor": "Instructor",
+    "reviews": "Reviews"
+  },
+  "coursesPage": {
+    "pageTitle": "All Courses",
+    "pageSubtitle": "Explore our comprehensive collection of courses designed to help you achieve your learning goals"
+  },
+  "headerAllCourses": {
+    "title": "Courses",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolor quibusdam sit sequi illo."
+  },
+  "cardCourse": {
+    "noRating": "No rating",
+    "hours": "hours",
+    "lessons": "lessons",
+    "instructor": "Instructor",
+    "error": "Error"
+  },
+  "enrollCourse": {
+    "enrollError": "Please log in to enroll in this course",
+    "enrollSuccess": "Successfully enrolled in course!",
+    "subscriptionDetails": "Subscription Details",
+    "vodafoneNumber": "Vodafone Number",
+    "vodafonePlaceholder": "Enter Vodafone number",
+    "amount": "Amount",
+    "amountPlaceholder": "Enter amount",
+    "parentPhone": "Parent Phone",
+    "parentPhonePlaceholder": "Enter parent phone number",
+    "studentInfo": "Student Information",
+    "studentInfoPlaceholder": "Enter student information",
+    "cancel": "Cancel",
+    "enrollNow": "Enroll Now",
+    "processing": "Processing...",
+    "confirmSubscription": "Confirm Subscription",
+    "courseIncludes": "This course includes",
+    "price": "Price",
+    "episodes": "Episodes",
+    "date": "Date"
+  },
+  "overviewCourse": {
+    "overview": "Overview",
+    "description": "Course Description",
+    "curriculum": "Curriculum",
+    "noEpisodes": "No episodes available for this course",
+    "subscribeToView": "You must subscribe to view the course episodes.",
+    "whatYouWillLearn": "What you will learn",
+    "requirements": "Requirements",
+    "targetAudience": "Target Audience"
+  },
+  "reviewCourse": {
+    "reviews": "Reviews",
+    "studentReviews": "Student Reviews",
+    "loadingReviews": "Loading reviews...",
+    "basedOnAverage": "(Based on average review)",
+    "noReviews": "No reviews yet",
+    "leaveReview": "Leave a Review",
+    "provideRatingAndText": "Please provide both rating and review text",
+    "loginToReview": "You must be logged in to post a review.",
+    "sessionExpired": "Session expired. Redirecting to login...",
+    "yourRating": "Your Rating",
+    "yourReview": "Your Review",
+    "postReview": "Post Review",
+    "beFirstToReview": "Be the first to review this course",
+    "addReview": "Add Review",
+    "rating": "Rating",
+    "comment": "Comment",
+    "submitReview": "Submit Review",
+    "reviewSubmitted": "Review submitted successfully!",
+    "reviewError": "Error submitting review. Please try again."
+  },
+  "headerCourse": {
+    "backToCourses": "Back to Courses",
+    "courseDetails": "Course Details",
+    "lastUpdated": "Last updated"
+  },
+  "instructorCourse": {
+    "instructor": "Instructor",
+    "aboutInstructor": "About the Instructor",
+    "expertise": "Expertise",
+    "experience": "Experience",
+    "contactInstructor": "Contact Instructor",
+    "noInstructorInfo": "No instructor information available"
+  },
+  "filtersCourses": {
+    "filterBy": "Filter by",
+    "allLevels": "All Levels",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "sortBy": "Sort by",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "priceLowToHigh": "Price: Low to High",
+    "priceHighToLow": "Price: High to Low",
+    "rating": "Rating",
+    "clearFilters": "Clear Filters",
+    "description": "Check out all live courses available for you. Enroll any course that is available below.",
+    "allCategories": "All Categories"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "forgotPassword": "Forgot password?",
+      "loginButton": "Login",
+      "noAccount": "Don't have an account?",
+      "signup": "Signup",
+      "loginFailed": "Login failed. Please try again.",
+      "loginWithFacebook": "Login with Facebook",
+      "loginWithGoogle": "Login with Google",
+      "or": "Or"
+    },
+    "register": {
+      "title": "Signup",
+      "fullName": "Full Name",
+      "email": "Email",
+      "createPassword": "Create password",
+      "confirmPassword": "Confirm password",
+      "phone": "Phone",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "signupButton": "Signup",
+      "creatingAccount": "Creating Account...",
+      "alreadyHaveAccount": "Already have an account?",
+      "login": "Login",
+      "signupWithFacebook": "Signup with Facebook",
+      "signupWithGoogle": "Signup with Google",
+      "validation": {
+        "fullNameRequired": "Full name is required",
+        "emailRequired": "Email is required",
+        "validEmail": "Please enter a valid email address",
+        "passwordRequired": "Password is required",
+        "passwordLength": "Password must be at least 6 characters long",
+        "passwordsNotMatch": "Passwords do not match",
+        "genderRequired": "Please select your gender"
+      },
+      "success": {
+        "title": "Account Created Successfully!",
+        "description": "Your account has been created. Please check your email and click the activation link to verify your account.",
+        "note": "You will be able to log in after verifying your email.",
+        "goToLogin": "Go to Login"
+      }
+    },
+    "forgotPassword": {
+      "title": "Forgot Password",
+      "emailPlaceholder": "Enter your email",
+      "sendResetLink": "Send Reset Link",
+      "rememberPassword": "Remember your password?",
+      "backToLogin": "Back to Login",
+      "success": {
+        "title": "Password Reset Email Sent!",
+        "description": "We've sent a password reset link to your email address. Please check your inbox (and spam folder) to proceed with resetting your password.",
+        "note": "The link will expire after a certain time for security reasons.",
+        "backToLogin": "Back to Login"
+      },
+      "error": "An error occurred. Please try again.",
+      "successMessage": "If the email exists, a password reset link has been sent."
+    },
+    "resetPassword": {
+      "title": "Reset Password",
+      "emailPlaceholder": "Enter your email",
+      "pinPlaceholder": "Enter PIN",
+      "createPassword": "Create password",
+      "confirmPassword": "Confirm password",
+      "resetButton": "Reset Password",
+      "rememberPassword": "Remember your password?",
+      "backToLogin": "Back to Login",
+      "successMessage": "Your password has been reset successfully.",
+      "error": "An error occurred. Please try again."
+    },
+    "verifyEmail": {
+      "title": "Verify Your Email",
+      "emailPlaceholder": "Email (e.g., ahmed.student@example.com)",
+      "pinPlaceholder": "PIN (e.g., 123456)",
+      "verifyButton": "Verify Email",
+      "verifying": "Verifying...",
+      "alreadyVerified": "Already verified?",
+      "backToLogin": "Back to Login",
+      "successMessage": "Your email has been successfully verified! You can now log in.",
+      "error": "Invalid email or PIN. Please try again.",
+      "verificationFailed": "Failed to verify email. Please try again or request a new PIN."
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "loadingNotifications": "Loading notifications...",
+    "noNotifications": "No notifications yet",
+    "noNotificationsDescription": "You're all caught up! Check back later for new updates.",
+    "markAllAsRead": "Mark all as read",
+    "markAsRead": "Mark as read",
+    "delete": "Delete",
+    "viewDetails": "View Details",
+    "failedToFetch": "Failed to fetch notifications",
+    "errorLoading": "Error loading notifications",
+    "errorMarkingAllRead": "Error marking all as read",
+    "errorMarkingRead": "Error marking as read",
+    "errorDeleting": "Error deleting notification",
+    "justNow": "Just now",
+    "minutesAgo": "m ago",
+    "hoursAgo": "h ago",
+    "daysAgo": "d ago",
+    "course": "Course",
+    "page": "Page",
+    "of": "of",
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "studentDashboard": {
+    "title": "Student Dashboard",
+    "courses": "Courses",
+    "editProfile": "Edit Profile",
+    "changePassword": "Change Password",
+    "deleteAccount": "Delete Account",
+    "noProfileData": "No profile data available.",
+    "selectTabToView": "Select a tab to view content.",
+    "failedToLoadProfile": "Failed to load profile",
+    "noAuthToken": "No authentication token provided"
+  },
+  "userProfile": {
+    "title": "Edit Profile",
+    "studentProfile": "Student Profile",
+    "editStudentProfile": "Edit Student Profile",
+    "fullName": "Full Name",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "gender": "Gender",
+    "male": "Male",
+    "female": "Female",
+    "saveChanges": "Save Changes",
+    "saving": "Saving...",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "change": "Change",
+    "profilePicture": "Profile picture",
+    "profileUpdated": "Profile updated successfully!",
+    "updateError": "Failed to update profile",
+    "validation": {
+      "nameRequired": "Name is required",
+      "fullNameRequired": "Full name is required",
+      "emailRequired": "Email is required",
+      "validEmail": "Please enter a valid email address",
+      "phoneRequired": "Phone number is required"
+    }
+  },
+  "changePassword": {
+    "title": "Change Password",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "confirmNewPassword": "Confirm New Password",
+    "saveChanges": "Save Changes",
+    "saving": "Saving...",
+    "clear": "Clear",
+    "passwordChanged": "Password changed successfully!",
+    "changeError": "Error changing password. Please try again.",
+    "validation": {
+      "allFieldsRequired": "All password fields are required",
+      "currentPasswordRequired": "Current password is required",
+      "newPasswordRequired": "New password is required",
+      "passwordLength": "Password must be at least 6 characters long",
+      "passwordsNotMatch": "New password and confirmation do not match"
+    }
+  },
+  "deleteAccount": {
+    "title": "Delete Account",
+    "warning": "Warning: This action cannot be undone!",
+    "description": "Deleting your account will permanently remove all your data, including courses, subscriptions, and personal information.",
+    "confirmPassword": "Confirm Password",
+    "deleteAccount": "Delete Account",
+    "deleting": "Deleting...",
+    "accountDeleted": "Account deleted successfully!",
+    "deleteError": "Error deleting account. Please try again.",
+    "validation": {
+      "passwordRequired": "Password is required",
+      "passwordIncorrect": "Password is incorrect"
+    }
+  },
+  "lessons": {
+    "title": "Course Lessons",
+    "sidebar": {
+      "title": "Course Content",
+      "episodes": "Episodes",
+      "noEpisodes": "No episodes available",
+      "currentEpisode": "Current Episode"
+    },
+    "videoPlayer": {
+      "loading": "Loading video...",
+      "error": "Error loading video",
+      "play": "Play",
+      "pause": "Pause",
+      "fullscreen": "Fullscreen",
+      "volume": "Volume"
+    },
+    "comments": {
+      "title": "Comments",
+      "addComment": "Add a comment...",
+      "postComment": "Post Comment",
+      "posting": "Posting...",
+      "noComments": "No comments yet. Be the first to comment!",
+      "loadingComments": "Loading comments...",
+      "commentPosted": "Comment posted successfully!",
+      "commentError": "Error posting comment. Please try again.",
+      "loginToComment": "Please log in to post a comment.",
+      "validation": {
+        "commentRequired": "Comment is required"
+      }
+    },
+    "courseInfo": {
+      "title": "Course Information",
+      "instructor": "Instructor",
+      "duration": "Duration",
+      "episodes": "Episodes",
+      "level": "Level",
+      "description": "Description"
+    }
+  },
+  "subscriptionsPage": {
+    "title": "Subscriptions",
+    "noSubscriptions": "No subscriptions found",
+    "exploreCourses": "Explore our courses to get started!"
+  },
+  "adminDashboard": {
+    "title": "Admin Dashboard",
+    "overview": "Overview",
+    "courses": "Courses",
+    "lessons": "Lessons",
+    "subscriptions": "Subscriptions",
+    "users": "Users",
+    "notifications": "Notifications",
+    "backToHome": "Back to Home",
+    "logout": "Logout",
+    "subscriptionsManager": {
+      "title": "Subscriptions Manager",
+      "allSubscriptions": "All Subscriptions",
+      "pendingSubscriptions": "Pending Subscriptions",
+      "createSubscription": "Create Subscription",
+      "searchSubscriptions": "Search Subscriptions",
+      "filterByStatus": "Filter by Status",
+      "filterByCourse": "Filter by Course",
+      "allStatuses": "All Statuses",
+      "allCourses": "All Courses",
+      "noSubscriptionsFound": "No subscriptions found",
+      "loadingSubscriptions": "Loading subscriptions...",
+      "failedToFetch": "Failed to fetch subscriptions",
+      "approveSuccess": "Subscription approved successfully",
+      "rejectSuccess": "Subscription rejected successfully",
+      "approveError": "Failed to approve subscription",
+      "rejectError": "Failed to reject subscription",
+      "viewMode": {
+        "all": "All",
+        "pending": "Pending"
+      }
+    },
+    "cardSubscription": {
+      "unknownCourse": "Unknown Course",
+      "unknownLevel": "Unknown",
+      "unknownInstructor": "Unknown",
+      "notSet": "Not set",
+      "free": "Free",
+      "studentInformation": "Student Information",
+      "unknownStudent": "Unknown",
+      "noEmail": "No email",
+      "parent": "Parent",
+      "subscriptionDetails": "Subscription Details",
+      "subscribed": "Subscribed",
+      "expires": "Expires",
+      "notes": "Notes",
+      "adminNotes": "Admin Notes",
+      "active": "Active",
+      "inactive": "Inactive",
+      "id": "ID",
+      "price": "Price",
+      "duration": "Duration",
+      "hours": "hours",
+      "instructor": "Instructor",
+      "grade": "Grade",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "approveSubscription": "Approve subscription",
+      "rejectSubscription": "Reject subscription",
+      "editSubscription": "Edit subscription",
+      "deleteSubscription": "Delete subscription"
+    },
+    "createSubscription": {
+      "title": "Create New Subscription",
+      "selectUser": "Select User",
+      "selectCourse": "Select Course",
+      "vodafoneNumber": "Vodafone Number",
+      "vodafonePlaceholder": "Enter Vodafone number",
+      "parentPhone": "Parent Phone",
+      "parentPhonePlaceholder": "Enter parent phone number",
+      "studentInfo": "Student Information",
+      "studentInfoPlaceholder": "Enter student information",
+      "adminNotes": "Admin Notes",
+      "adminNotesPlaceholder": "Enter admin notes",
+      "status": "Status",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "createButton": "Create Subscription",
+      "creating": "Creating...",
+      "createSuccess": "Subscription created successfully",
+      "createError": "Failed to create subscription",
+      "validation": {
+        "userRequired": "User is required",
+        "courseRequired": "Course is required",
+        "vodafoneRequired": "Vodafone number is required",
+        "parentPhoneRequired": "Parent phone is required"
+      }
+    },
+    "updateSubscription": {
+      "title": "Update Subscription",
+      "updateButton": "Update Subscription",
+      "updating": "Updating...",
+      "updateSuccess": "Subscription updated successfully",
+      "updateError": "Failed to update subscription"
+    },
+    "deleteSubscription": {
+      "title": "Delete Subscription",
+      "confirmMessage": "Are you sure you want to delete this subscription?",
+      "warning": "This action cannot be undone.",
+      "deleteButton": "Delete Subscription",
+      "deleting": "Deleting...",
+      "deleteSuccess": "Subscription deleted successfully",
+      "deleteError": "Failed to delete subscription"
+    },
+    "searchSubscription": {
+      "title": "Search Subscriptions",
+      "searchPlaceholder": "Search by student name, email, course, or phone...",
+      "searchButton": "Search",
+      "clearButton": "Clear",
+      "noResults": "No subscriptions found matching your search criteria"
+    },
+    "userManager": {
+      "title": "User Management",
+      "addUser": "Add User",
+      "searchUsers": "Search Users",
+      "filterByRole": "Filter by Role",
+      "filterByGender": "Filter by Gender",
+      "allRoles": "All Roles",
+      "allGenders": "All Genders",
+      "noUsersFound": "No users found",
+      "loadingUsers": "Loading users...",
+      "failedToFetch": "Failed to fetch users",
+      "createSuccess": "User created successfully",
+      "createError": "Failed to create user",
+      "updateSuccess": "User updated successfully",
+      "updateError": "Failed to update user",
+      "deleteSuccess": "User deleted successfully",
+      "deleteError": "Failed to delete user"
+    },
+    "cardUser": {
+      "unknownUser": "Unknown User",
+      "noEmail": "No email",
+      "noPhone": "No phone",
+      "userInformation": "User Information",
+      "role": "Role",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "student": "Student",
+      "admin": "Admin",
+      "instructor": "Instructor",
+      "active": "Active",
+      "inactive": "Inactive",
+      "id": "ID",
+      "email": "Email",
+      "phone": "Phone",
+      "editUser": "Edit user",
+      "deleteUser": "Delete user"
+    },
+    "createUser": {
+      "title": "Create New User",
+      "fullName": "Full Name",
+      "enterFullName": "Enter full name",
+      "emailAddress": "Email Address",
+      "enterEmail": "Enter email address",
+      "phoneNumber": "Phone Number",
+      "enterPhone": "Enter phone number",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "password": "Password",
+      "enterPassword": "Enter password",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm password",
+      "cancel": "Cancel",
+      "creating": "Creating...",
+      "createUser": "Create User"
+    },
+    "updateUser": {
+      "title": "Update User",
+      "fullName": "Full Name",
+      "enterFullName": "Enter full name",
+      "emailAddress": "Email Address",
+      "enterEmail": "Enter email address",
+      "phoneNumber": "Phone Number",
+      "enterPhone": "Enter phone number",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female",
+      "cancel": "Cancel",
+      "updating": "Updating...",
+      "updateUser": "Update User"
+    },
+    "deleteUser": {
+      "title": "Delete User",
+      "confirmationMessage": "Are you sure you want to delete \"{{name}}\"? This action cannot be undone.",
+      "cancel": "No, cancel",
+      "deleting": "Deleting...",
+      "confirm": "Yes, I'm sure"
+    },
+    "searchUser": {
+      "title": "Search Users",
+      "searchPlaceholder": "Search by name, email, or phone...",
+      "searchButton": "Search",
+      "clearButton": "Clear",
+      "noResults": "No users found matching your search criteria"
+    },
+    "notificationsManager": {
+      "title": "Notifications Management",
+      "sendNotification": "Send Notification",
+      "searchNotifications": "Search Notifications",
+      "filterByType": "Filter by Type",
+      "allTypes": "All Types",
+      "noNotificationsFound": "No notifications found",
+      "loadingNotifications": "Loading notifications...",
+      "failedToFetch": "Failed to fetch data",
+      "sendSuccess": "Notification sent successfully",
+      "sendError": "Failed to send notification",
+      "statistics": {
+        "totalNotifications": "Total Notifications",
+        "sentToday": "Sent Today",
+        "readNotifications": "Read Notifications",
+        "unreadNotifications": "Unread Notifications"
+      }
+    },
+    "cardNotification": {
+      "unknownUser": "Unknown User",
+      "notificationDetails": "Notification Details",
+      "title": "Title",
+      "message": "Message",
+      "type": "Type",
+      "status": "Status",
+      "sent": "Sent",
+      "read": "Read",
+      "unread": "Unread",
+      "id": "ID",
+      "recipient": "Recipient",
+      "editNotification": "Edit notification",
+      "deleteNotification": "Delete notification",
+      "general": "General",
+      "course": "Course",
+      "system": "System",
+      "additionalData": "Additional Data",
+      "lessonId": "Lesson ID",
+      "url": "URL"
+    },
+    "createNotification": {
+      "title": "Send Notification",
+      "notificationTitle": "Notification Title",
+      "enterTitle": "Enter notification title",
+      "message": "Message",
+      "enterMessage": "Enter notification message",
+      "type": "Type",
+      "general": "General",
+      "course": "Course",
+      "system": "System",
+      "gender": "Gender",
+      "allGenders": "All Genders",
+      "male": "Male",
+      "female": "Female",
+      "selectCourse": "Select a course",
+      "additionalData": "Additional Data",
+      "lessonId": "Lesson ID",
+      "optionalLessonId": "Optional lesson ID",
+      "url": "URL",
+      "optionalUrl": "Optional URL",
+      "cancel": "Cancel",
+      "sending": "Sending...",
+      "sendNotification": "Send Notification"
+    },
+    "searchNotification": {
+      "title": "Search Notifications",
+      "searchPlaceholder": "Search by title, message, or recipient...",
+      "searchButton": "Search",
+      "clearButton": "Clear",
+      "noResults": "No notifications found matching your search criteria"
+    },
+    "dashboardOverview": {
+      "title": "Dashboard Overview",
+      "welcome": "Welcome to your admin dashboard",
+      "liveDashboard": "Live Dashboard",
+      "loadingDashboard": "Loading dashboard...",
+      "failedToFetchStats": "Failed to fetch dashboard statistics: ",
+      "totalUsers": "Total Users",
+      "totalCourses": "Total Courses",
+      "totalSubscriptions": "Total Subscriptions",
+      "activeSubscriptions": "Active Subscriptions",
+      "thisMonth": "this month",
+      "active": "active",
+      "approved": "approved",
+      "progressOverview": "Progress Overview",
+      "activeCourses": "Active Courses",
+      "activeSubscriptions": "Active Subscriptions",
+      "approvedSubscriptions": "Approved Subscriptions",
+      "total": "total",
+      "quickStatistics": "Quick Statistics",
+      "students": "Students",
+      "pending": "Pending",
+      "newUsers": "New Users",
+      "newSubscriptions": "New Subscriptions",
+      "userGrowth": "User Growth",
+      "courseActivity": "Course Activity",
+      "subscriptionRate": "Subscription Rate",
+      "monthlyGrowthRate": "Monthly growth rate",
+      "activeCourses": "Active courses",
+      "userSubscriptionRate": "User subscription rate",
+      "subscriptionStatus": "Subscription Status",
+      "courseActivity": "Course Activity"
+    }
+  }
+}
