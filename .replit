@@ -1,0 +1,15 @@
+[workflows]
+runButton = "Deploy to Production"
+
+[[workflows.workflow]]
+name = "Deploy to Production"
+author = 46949593
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "chmod +x deploy.sh"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "./deploy.sh"

@@ -3,18 +3,25 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  define: {
-    "process.env": process.env,
-  },
-  server: {
-    host: "localhost",
-    port: 5173,
-    strictPort: true,
-    watch: {
-      usePolling: true, // مفيد لـ WSL أو بيئات افتراضية
+  base: '/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
     },
   },
-  optimizeDeps: {
-    include: ["react-player", "tailwindcss"], // تحسين تبعيات react-player و tailwindcss
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 5173,
   },
 });
