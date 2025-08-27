@@ -1,4 +1,3 @@
-
 FROM php:8.2-fpm
 
 # Install system dependencies
@@ -32,14 +31,20 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy existing application directory contents
-COPY . /var/www/html
+# Copy composer files first for better layer caching
+COPY composer.json composer.lock ./
 
-# Copy existing application directory permissions
-COPY --chown=www-data:www-data . /var/www/html
+# Copy artisan file to avoid post-autoload-dump script error
+COPY artisan ./
 
 # Install Laravel dependencies
 RUN composer install --no-dev --optimize-autoloader
+
+# Copy application code
+COPY . .
+
+# Copy existing application directory permissions
+COPY --chown=www-data:www-data . /var/www/html
 
 # Set proper permissions
 RUN chown -R www-data:www-data /var/www/html \
