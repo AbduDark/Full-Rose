@@ -14,6 +14,17 @@ services:
     networks:
       - full-rose-network
 
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    container_name: full-rose-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    command: redis-server --requirepass ${REDIS_PASSWORD:-}
+    networks:
+      - full-rose-network
+
   # Laravel Backend
   backend:
     build:
@@ -35,6 +46,7 @@ services:
       - DB_PASSWORD=laravelpassword
     depends_on:
       - db
+      - redis
     networks:
       - full-rose-network
     expose:
