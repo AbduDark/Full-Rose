@@ -1,0 +1,82 @@
+
+version: '3.8'
+
+services:
+  # MySQL Database
+  db:
+    image: mysql:8.0
+    container_name: full-rose-db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: full_rose
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: laravelpassword
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - full-rose-network
+    ports:
+      - "3306:3306"
+
+  # Laravel Backend
+  backend:
+    build:
+      context: ./Back-End
+      dockerfile: Dockerfile
+    container_name: full-rose-backend
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./Back-End:/var/www/html
+      - ./Back-End/storage:/var/www/html/storage
+      - ./Back-End/bootstrap/cache:/var/www/html/bootstrap/cache
+    environment:
+      - DB_CONNECTION=mysql
+      - DB_HOST=db
+      - DB_PORT=3306
+      - DB_DATABASE=full_rose
+      - DB_USERNAME=laravel
+      - DB_PASSWORD=laravelpassword
+    depends_on:
+      - db
+    networks:
+      - full-rose-network
+    expose:
+      - "9000"
+
+  # React Frontend Build
+  frontend:
+    build:
+      context: ./Front-End
+      dockerfile: Dockerfile
+    container_name: full-rose-frontend
+    volumes:
+      - frontend_build:/usr/share/nginx/html
+    networks:
+      - full-rose-network
+
+  # Nginx Reverse Proxy
+  nginx:
+    image: nginx:alpine
+    container_name: full-rose-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - frontend_build:/usr/share/nginx/html
+      - ./Back-End/public:/var/www/html/public
+    depends_on:
+      - backend
+      - frontend
+    networks:
+      - full-rose-network
+
+volumes:
+  db_data:
+  frontend_build:
+
+networks:
+  full-rose-network:
+    driver: bridge
