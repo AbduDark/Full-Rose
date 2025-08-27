@@ -13,8 +13,6 @@ services:
       - db_data:/var/lib/mysql
     networks:
       - full-rose-network
-    ports:
-      - "3306:3306"
 
   # Laravel Backend
   backend:
