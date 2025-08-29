@@ -40,7 +40,7 @@ class LessonController extends Controller
 
         return response()->json($lessons);
     }
-       
+
 
     public function store(Request $request)
     {

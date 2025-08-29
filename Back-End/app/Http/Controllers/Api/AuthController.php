@@ -71,27 +71,27 @@ class AuthController extends Controller
         $pin = rand(100000, 999999);
         $token = Str::random(60);
 
-             if (!file_exists(public_path('avatars'))) {
-        mkdir(public_path('avatars'), 0777, true);
-    }
+    //          if (!file_exists(public_path('avatars'))) {
+    //     mkdir(public_path('avatars'), 0777, true);
+    // }
 
-            $imagePath = 'uploads/avatars/default.svg';
+    //         $imagePath = 'uploads/avatars/default.svg';
 
-    // لو رفع صورة
-    if ($request->hasFile('image')) {
-        $image      = $request->file('image');
-        $imageName  = uniqid('avatar_') . '.' . $image->getClientOriginalExtension();
+    // // لو رفع صورة
+    // if ($request->hasFile('image')) {
+    //     $image      = $request->file('image');
+    //     $imageName  = uniqid('avatar_') . '.' . $image->getClientOriginalExtension();
 
-        // التأكد أن المسار موجود
-        $uploadPath = public_path('uploads/avatars');
-        if (!file_exists($uploadPath)) {
-            mkdir($uploadPath, 0777, true);
-        }
+    //     // التأكد أن المسار موجود
+    //     $uploadPath = public_path('uploads/avatars');
+    //     if (!file_exists($uploadPath)) {
+    //         mkdir($uploadPath, 0777, true);
+    //     }
 
-        // حفظ الصورة
-        $image->move($uploadPath, $imageName);
-        $imagePath = 'uploads/avatars/' . $imageName;
-    }
+    //     // حفظ الصورة
+    //     $image->move($uploadPath, $imageName);
+    //     $imagePath = 'uploads/avatars/' . $imageName;
+    // }
 
 
         $user = User::create([
@@ -104,7 +104,7 @@ class AuthController extends Controller
             'pin_expires_at'   => Carbon::now()->addMinutes(10),
             'email_verified_at'=> null,
             'role'             => 'student',
-            'image'            =>  $imagePath, // نحفظ المسار فقط
+            // 'image'            =>  $imagePath, // نحفظ المسار فقط
         ]);
 
         // إنشاء سجل التحقق من البريد

@@ -27,9 +27,9 @@ class CourseController extends BaseController
             $cacheKey = 'courses_' . md5(serialize($request->all()));
 
             $courses = Cache::remember($cacheKey, now()->addMinutes(30), function () use ($request) {
-                $query = Course::where('is_active', true)
-                    ->with(['ratings'])
-                    ->withCount('lessons');
+                $query = Course::where('is_active', true);
+                    // ->with(['ratings'])
+                    // ->withCount('lessons');
 
                 // Search
                 if ($request->has('search')) {
@@ -209,7 +209,7 @@ class CourseController extends BaseController
             $data['image'] = 'uploads/courses/' . $filename; // نخزن المسار في قاعدة البيانات
         }
 
-        $course = Course::create($data);
+        $course = Course::create(attributes: $data);
         Cache::forget('courses_' . md5(''));
 
         return $this->successResponse(
@@ -277,7 +277,7 @@ public function update(Request $request, $id)
                 'success' => false,
                 'message' => 'تعذر تحديث بيانات الكورس'
             ], 500);
-        }   
+        }
 
         return response()->json([
             'success' => true,

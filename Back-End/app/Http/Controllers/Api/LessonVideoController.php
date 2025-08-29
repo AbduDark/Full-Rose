@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Traits\ApiResponseTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -36,10 +37,16 @@ class LessonVideoController extends Controller
                 ], 400);
             }
 
-            $lesson = Lesson::findOrFail($lessonId);
+            $lesson = Lesson::find($lessonId);
+            if (!$lesson) {
+                return response()->json([
+                    'success' => false,
+                    'message' => 'الدرس غير موجود'
+                ], 404);
+            }
 
             // التحقق من الصلاحيات (admin only)
-            if (!$request->user()->isAdmin('admin')) {
+            if ($request->user()->role !== 'admin') {
                 return $this->errorResponse('غير مصرح لك برفع الفيديوهات', 403);
             }
 
@@ -59,7 +66,7 @@ class LessonVideoController extends Controller
             ]);
 
             // التحقق من عدم وجود job معالجة مسبقًا
-            $existingJobs = \DB::table('jobs')
+            $existingJobs = DB::table('jobs')
                 ->where('payload', 'like', '%ProcessLessonVideo%')
                 ->where('payload', 'like', '%"lesson_id":' . $lesson->id . '%')
                 ->count();
@@ -67,6 +74,7 @@ class LessonVideoController extends Controller
             if ($existingJobs == 0) {
                 // إضافة Job لمعالجة الفيديو
                 ProcessLessonVideo::dispatch($lesson)->onQueue('video-processing');
+                Cache::put("video_processing_started_{$lesson->id}", time(), 3600);
                 Log::info("تم إضافة job معالجة الفيديو للدرس: {$lesson->id}");
             } else {
                 Log::info("يوجد job معالجة فيديو قيد التنفيذ للدرس: {$lesson->id}");
@@ -82,8 +90,15 @@ class LessonVideoController extends Controller
             ]);
 
         } catch (\Exception $e) {
-            Log::error('Video upload error: ' . $e->getMessage());
-            return $this->errorResponse('حدث خطأ أثناء رفع الفيديو', 500);
+            Log::error('Video upload error: ' . $e->getMessage(), [
+                'lesson_id' => $lessonId,
+                'user_id' => $request->user()->id ?? null,
+                'trace' => $e->getTraceAsString()
+            ]);
+            return response()->json([
+                'success' => false,
+                'message' => 'خطأ في رفع الفيديو: ' . $e->getMessage()
+            ], 500);
         }
     }
 
@@ -128,7 +143,13 @@ class LessonVideoController extends Controller
     public function getSegment(Request $request, $lessonId, $segment)
     {
         try {
-            $lesson = Lesson::findOrFail($lessonId);
+            $lesson = Lesson::find($lessonId);
+            if (!$lesson) {
+                return response()->json([
+                    'success' => false,
+                    'message' => 'الدرس غير موجود'
+                ], 404);
+            }
             $user = auth()->user();
 
             if (!$this->canAccessLesson($user, $lesson)) {
@@ -193,24 +214,23 @@ class LessonVideoController extends Controller
     }
 
     /**
-     * حالة معالجة الفيديو
+     * حالة معالجة الفيديو مع تتبع التقدم المحسن
      */
     public function getProcessingStatus(Lesson $lesson)
     {
         $status = $lesson->video_status ?? 'not_uploaded';
-        $progress = match($status) {
-            'processing' => 50,
-            'ready' => 100,
-            'failed' => 0,
-            default => 0
-        };
+
+        // تتبع التقدم بناءً على الملفات المنشأة
+        $progress = $this->calculateProcessingProgress($lesson, $status);
 
         $response = [
             'lesson_id' => $lesson->id,
             'status' => $status,
             'processing_progress' => $progress,
             'video_available' => $status === 'ready',
-            'message' => $this->getStatusMessage($status)
+            'message' => $this->getStatusMessage($status),
+            'estimated_time_remaining' => $this->getEstimatedTimeRemaining($lesson, $status),
+            'video_info' => $this->getVideoInfo($lesson)
         ];
 
         if ($status === 'ready') {
@@ -222,11 +242,96 @@ class LessonVideoController extends Controller
     }
 
     /**
+     * حساب تقدم المعالجة بناءً على الملفات المنشأة
+     */
+    private function calculateProcessingProgress(Lesson $lesson, string $status): int
+    {
+        if ($status === 'ready') return 100;
+        if ($status === 'failed') return 0;
+        if ($status !== 'processing') return 0;
+
+        $outputDir = storage_path("app/private_videos/hls/lesson_{$lesson->id}");
+
+        if (!is_dir($outputDir)) return 10; // بدء المعالجة
+
+        $playlistPath = "{$outputDir}/index.m3u8";
+        if (!file_exists($playlistPath)) return 25; // إنشاء المجلد
+
+        // عد ملفات الـ segments المنشأة
+        $segmentFiles = glob("{$outputDir}/segment_*.ts");
+        $segmentCount = count($segmentFiles);
+
+        if ($segmentCount === 0) return 40; // بدء إنشاء المقاطع
+
+        // تقدير عدد المقاطع الإجمالي بناءً على مدة الفيديو
+        $expectedSegments = $this->estimateSegmentCount($lesson);
+
+        if ($expectedSegments > 0) {
+            $segmentProgress = min(90, 50 + (($segmentCount / $expectedSegments) * 40));
+            return (int) round($segmentProgress);
+        }
+
+        return 70; // تقدم افتراضي
+    }
+
+    /**
+     * تقدير عدد المقاطع بناءً على مدة الفيديو
+     */
+    private function estimateSegmentCount(Lesson $lesson): int
+    {
+        if ($lesson->video_duration) {
+            return (int) ceil($lesson->video_duration / 6); // 6 ثوان لكل مقطع
+        }
+        return 0;
+    }
+
+    /**
+     * تقدير الوقت المتبقي للمعالجة
+     */
+    private function getEstimatedTimeRemaining(Lesson $lesson, string $status): ?string
+    {
+        if ($status !== 'processing') return null;
+
+        $processingStarted = Cache::get("video_processing_started_{$lesson->id}");
+        if (!$processingStarted) return null;
+
+        $elapsedMinutes = (time() - $processingStarted) / 60;
+        $progress = $this->calculateProcessingProgress($lesson, $status);
+
+        if ($progress > 10) {
+            $totalEstimatedMinutes = ($elapsedMinutes / $progress) * 100;
+            $remainingMinutes = max(0, $totalEstimatedMinutes - $elapsedMinutes);
+
+            if ($remainingMinutes < 2) return 'أقل من دقيقتين';
+            if ($remainingMinutes < 60) return sprintf('حوالي %d دقيقة', (int) round($remainingMinutes));
+
+            $hours = (int) ($remainingMinutes / 60);
+            $minutes = (int) ($remainingMinutes % 60);
+            return sprintf('حوالي %d ساعة و %d دقيقة', $hours, $minutes);
+        }
+
+        return 'جاري التقدير...';
+    }
+
+    /**
+     * معلومات الفيديو
+     */
+    private function getVideoInfo(Lesson $lesson): array
+    {
+        return [
+            'duration' => $lesson->getFormattedDuration(),
+            'size' => $lesson->getFormattedSize(),
+            'uploaded_at' => $lesson->updated_at?->diffForHumans()
+        ];
+    }
+
+    /**
      * حذف الفيديو (admin only)
      */
     public function deleteVideo(Request $request, Lesson $lesson)
     {
-        if (!$request->user()->isAdmin('admin')) {
+        if ($request->user()->role !== 'admin')
+ {
             return $this->errorResponse('غير مصرح', 403);
         }
 
